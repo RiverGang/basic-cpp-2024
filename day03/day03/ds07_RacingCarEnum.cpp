@@ -1,9 +1,9 @@
-# include <iostream>
+/*# include <iostream>
 using namespace std;
 
 namespace CAR_CONST
 {
-	enum
+	enum // ¿­°ÅÇü
 	{
 		ID_LEN = 20,
 		MAX_SPD = 200,
@@ -70,4 +70,4 @@ int main(void)
 	sped77.Accel();
 	sped77.ShowCarState();
 	return 0;
-}
+}*/

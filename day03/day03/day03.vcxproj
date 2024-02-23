@@ -137,6 +137,20 @@
     <ClCompile Include="ds05_struct02Cpp.cpp" />
     <ClCompile Include="ds06_struct03.cpp" />
     <ClCompile Include="ds07_RacingCarEnum.cpp" />
+    <ClCompile Include="ds08_RCOuterFunc.cpp" />
+    <ClCompile Include="ds09_rcClassBase.cpp" />
+    <ClCompile Include="ds10_RacingMain.cpp" />
+    <ClCompile Include="ds10_Car.cpp" />
+    <ClCompile Include="ds11_Filedivi01.cpp">
+      <SDLCheck Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</SDLCheck>
+    </ClCompile>
+    <ClCompile Include="ds12_Filedivi.cpp" />
+    <ClCompile Include="ds13_HumanFiledivi.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ds10_Car.h" />
+    <ClInclude Include="ds12_Filedivi.h" />
+    <ClInclude Include="ds13_HumanFiledivi.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

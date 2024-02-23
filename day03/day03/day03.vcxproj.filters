@@ -36,5 +36,37 @@
     <ClCompile Include="ds07_RacingCarEnum.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ds08_RCOuterFunc.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ds09_rcClassBase.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ds10_Car.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ds10_RacingMain.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ds11_Filedivi01.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ds12_Filedivi.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ds13_HumanFiledivi.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ds10_Car.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ds12_Filedivi.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ds13_HumanFiledivi.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
