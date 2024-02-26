@@ -8,6 +8,6 @@ private:
 	char job[20];
 
 public:
-	human(char hname, int hage, char hjob);
+	human(const char hname, int hage, const char hjob);
 	void humaninfo();
 };

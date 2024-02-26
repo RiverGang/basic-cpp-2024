@@ -2,11 +2,11 @@
 # include "ds13_HumanFiledivi.h"
 using namespace std;
 
-human::human(char hname, int hage, char hjob)
+human::human(const char hname, int hage, const char hjob)
 {
-	char name = hname;
+	const char name = hname;
 	int age = hage;
-	char job = hjob;
+	const char job = hjob;
 	
 }
 
