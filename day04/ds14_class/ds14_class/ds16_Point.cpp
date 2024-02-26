@@ -1,3 +1,4 @@
+/*
 # include <iostream>
 # include "ds16_Point.h"
 using namespace std;
@@ -46,4 +47,4 @@ bool Point::SetY(int ypos)
 	}
 	y = ypos;
 	return true;
-}
+}*/

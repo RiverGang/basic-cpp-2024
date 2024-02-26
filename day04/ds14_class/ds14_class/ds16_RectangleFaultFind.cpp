@@ -1,4 +1,4 @@
-# include<iostream>
+/*# include<iostream>
 # include "ds16_Point.h"
 # include "ds16_Rectangle.h"
 using namespace std;
@@ -28,3 +28,4 @@ int main(void)
 	rec.ShowRecInfo();
 	return 0;
 }
+*/

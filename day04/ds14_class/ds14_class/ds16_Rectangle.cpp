@@ -1,4 +1,4 @@
-# include <iostream>
+/*# include <iostream>
 # include "ds16_Rectangle.h"
 using namespace std;
 
@@ -21,4 +21,4 @@ void Rectangle::ShowRecInfo() const
 	cout << upLeft.GetY() << ']' << endl;
 	cout << "©Л го╢э: " << '[' << lowRight.GetX() << ", ";
 	cout << lowRight.GetY() << ']' << endl << endl;
-}
+}*/

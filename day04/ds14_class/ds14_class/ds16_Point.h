@@ -1,4 +1,4 @@
-#ifndef __POINT_H_
+/*#ifndef __POINT_H_
 #define __POINT_H_
 
 
@@ -16,3 +16,4 @@ public:
 	bool SetY(int ypos);
 };
 #endif
+*/

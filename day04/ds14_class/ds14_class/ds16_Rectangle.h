@@ -1,4 +1,4 @@
-#ifndef __RECTANGLE_H_
+/*#ifndef __RECTANGLE_H_
 #define __RECTANGLE_H_
 
 # include "ds16_Point.h"
@@ -15,3 +15,4 @@ public:
 };
 
 # endif
+*/
