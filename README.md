@@ -179,4 +179,48 @@ SoSimple *ptrArr = new SoSimple[10]
 	- 전역변수와 동일하게, 특정한 값을 초기화 하지 않으면 0으로 초기화
 	- 사용 자체는 선언된 함수 내에서만 가능
 	
+
+## 7일차
+- static 멤버변수(= 클래스 변수)
+	- 객체 생성마다 함께 생성되는 변수가 아닌 메모리 공간에 하나만 할당
+	- 각 객체들은 클래스 변수에 접근할 수 있는 '권한'만 가짐
+	
+- 상속(Inheritance)
+
+	```cpp
+		class Person // 부모(기초) 클래스
+		{
+		private:
+			int age;
+			char name[50];
+		public:
+			// ...
+		};
+
+		class UnivStudent : public Person 
+		// 자식(유도) 클래스
+		// Person 클래스를 상속받는다
+		// 상속 문법 -> ':' 접근제한 상속받을 클래스명
+		{
+
+		private:
+		char major[50];
+
+		public:
+			UnivStudent(const char* myname, int myage, const char *mymajor) : Person(myage, myname) // 부모 클래스의 생성자를 호출하여 부모 클래스 멤버변수를 초기화
+			{	
+				cout << "자식 생성자 실행" << endl;
+				strcpy(major, mymajor);
+			}
+	
+	```
+	
+	- protected 접근제한 선언
+		- 상속한 자식 클래스에서의 접근 허용
+		- private의 확장된 개념
+		- private < protected < public
+
+
+## 8일차
+	
 ## 10일차

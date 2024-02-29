@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ds43_PulicStaticMember", "ds43_PulicStaticMember\ds43_PulicStaticMember.vcxproj", "{C4353517-3EA3-45C2-9B58-14C2EA865B3F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4353517-3EA3-45C2-9B58-14C2EA865B3F}.Debug|x64.ActiveCfg = Debug|x64
+		{C4353517-3EA3-45C2-9B58-14C2EA865B3F}.Debug|x64.Build.0 = Debug|x64
+		{C4353517-3EA3-45C2-9B58-14C2EA865B3F}.Debug|x86.ActiveCfg = Debug|Win32
+		{C4353517-3EA3-45C2-9B58-14C2EA865B3F}.Debug|x86.Build.0 = Debug|Win32
+		{C4353517-3EA3-45C2-9B58-14C2EA865B3F}.Release|x64.ActiveCfg = Release|x64
+		{C4353517-3EA3-45C2-9B58-14C2EA865B3F}.Release|x64.Build.0 = Release|x64
+		{C4353517-3EA3-45C2-9B58-14C2EA865B3F}.Release|x86.ActiveCfg = Release|Win32
+		{C4353517-3EA3-45C2-9B58-14C2EA865B3F}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62E484F5-3B08-46BD-9A71-A8562178E540}
+	EndGlobalSection
+EndGlobal
