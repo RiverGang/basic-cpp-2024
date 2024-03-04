@@ -222,5 +222,83 @@ SoSimple *ptrArr = new SoSimple[10]
 
 
 ## 8일차
+- 다형성(Polymorphism)
+	- 부모 타입의 객체 포인터는 부모클래스의 객체 뿐만 아니라, 부모클래스를 상속하는 자식 클래스도 가리킬 수 있다
+	- 객체 포인터 변수: 객체의 주소 값을 저장하는 포인터 변수(객체를 가리키는 포인터 변수)
 	
+- 오버로딩(Overloading): 다중정의
+- 오버라이딩(Overriding): 재정의, 상속관계에서 사용
+	
+	```
+	# include <iostream>
+	using namespace std;
+
+	class Person
+	{
+	public:
+		void Sleep() { cout << "Sleep" << endl; }
+
+	};
+
+	class Student : public Person
+	{
+	public:
+		void Study() { cout << "Study" << endl; }
+		void Sleep() { cout << "Sleep Student" << endl; }
+	};
+
+	class PartTimeStudent : public Student // Student가 Person을 상속 받기에, PartTimeStudent는 Person을 간접상속 받는다
+	{
+	public:
+		void Work() { cout << "Work" << endl; }
+	};
+
+	int main(void)
+	{
+	Person* ptr1 = new Student();
+	Person* ptr2 = new PartTimeStudent();
+	Student* ptr3 = new PartTimeStudent();
+
+	ptr1->Sleep(); 
+	// 접근은 객체 포인터의 타입을 따른다
+	// Person 타입의 포인터 ptr1은 Student 타입의 객체를 가리키지만, 객체 Student의 Sleep이 아닌 포인터 ptr1의 타입인 Person의 Sleep()을 출력한다("Sleep")
+	}
+	```
+	
+- 가상함수(Virtual Function)
+	- 객체 위주로 호출이 되도록함
+	- 가상 함수 오버라이딩 시, 오버라이딩된 함수도 자동으로 가상함수 됨
+		
+		```
+		int main(void)
+		{
+		Third* tptr = new Third(); // Third type의 객체 생성
+		Second* sptr = tptr;
+		First* fptr = sptr;
+
+		fptr->MyFunc(); // 포인터의 자료형을 기반으로 한 호출이 아닌, 포인터 변수가 실제로 가리키는 객체(Third())를 참조하여 호출&출력
+		return 0;
+		}
+		```
+		
+- 순수 가상함수
+	- 함수의 몸체가 정의되지 않는 가상함수
+	- 순수 가상함수를 가지는 클래스(=추상클래스)는 객체 생성 불가능
+		
+		```
+		class Employee // 추상클래스
+		{
+		private:
+			char name [100];
+		public:
+			virtual int GetPay() const = 0; // 순수 가상함수, 순수지정자로 표현 ( = 0;)
+		}
+		
+		```
+		
+- 멤버함수와 멤버변수
+	- 멤버변수: 객체마다 생성되기
+	- 멤버함수: 메모리의 한 공간에 별도로 위치 (함수의 주소가 생성됨) -> 해당 함수가 정의된 클래스의 모든 객체가 하나의 함수를 공유하는 형태
+		- 객체가 함수에 주소를 통해 접근하는 형태, 함수 이름 = 주소
+		
 ## 10일차
