@@ -244,7 +244,7 @@ SoSimple *ptrArr = new SoSimple[10]
 	{
 	public:
 		void Study() { cout << "Study" << endl; }
-		void Sleep() { cout << "Sleep Student" << endl; }
+		void Sleep() { cout << "Sleep Student" << endl; } //오버라이딩
 	};
 
 	class PartTimeStudent : public Student // Student가 Person을 상속 받기에, PartTimeStudent는 Person을 간접상속 받는다
@@ -300,5 +300,21 @@ SoSimple *ptrArr = new SoSimple[10]
 	- 멤버변수: 객체마다 생성되기
 	- 멤버함수: 메모리의 한 공간에 별도로 위치 (함수의 주소가 생성됨) -> 해당 함수가 정의된 클래스의 모든 객체가 하나의 함수를 공유하는 형태
 		- 객체가 함수에 주소를 통해 접근하는 형태, 함수 이름 = 주소
+
+
+## 9일차
+- 연산자 오버로딩
+	- operator연산자기호
+	
+	- 멤버함수에 의한 연산자 오버로딩
+	- 전역함수에 의한 연산자 오버로딩
+		- 동시에 오버로딩될 경우 우선순위: 멤버함수>전역함수		
+	- 단항연산자 오버로딩
+		- 전위/후위 연산 구분 (int)
 		
+- 대입 연산자 '=' 정의 (오버로딩)
+	- 명시적 정의가 없으면 자동으로 디폴트 대입 연산자 삽입
+	- 변수대 변수의 얕은 복사
+	- 연산자 내 동적 할당 시, 깊은 복사가 필요하다면 직접 정의
+	
 ## 10일차

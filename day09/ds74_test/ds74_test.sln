@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ds74_test", "ds74_test\ds74_test.vcxproj", "{BEC8E204-E243-4CF2-A688-C21654C78B07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEC8E204-E243-4CF2-A688-C21654C78B07}.Debug|x64.ActiveCfg = Debug|x64
+		{BEC8E204-E243-4CF2-A688-C21654C78B07}.Debug|x64.Build.0 = Debug|x64
+		{BEC8E204-E243-4CF2-A688-C21654C78B07}.Debug|x86.ActiveCfg = Debug|Win32
+		{BEC8E204-E243-4CF2-A688-C21654C78B07}.Debug|x86.Build.0 = Debug|Win32
+		{BEC8E204-E243-4CF2-A688-C21654C78B07}.Release|x64.ActiveCfg = Release|x64
+		{BEC8E204-E243-4CF2-A688-C21654C78B07}.Release|x64.Build.0 = Release|x64
+		{BEC8E204-E243-4CF2-A688-C21654C78B07}.Release|x86.ActiveCfg = Release|Win32
+		{BEC8E204-E243-4CF2-A688-C21654C78B07}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E24AC1AB-ABA2-40EC-9C60-6EC32FF1D7C4}
+	EndGlobalSection
+EndGlobal
