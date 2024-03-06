@@ -28,6 +28,16 @@ public:
 		delete[]name;
 		cout << "called destructor!" << endl;
 	}
+
+	Person& operator=(const Person& ref)
+	{
+		delete[]name; // man2의 "Yoon ji yul"" 메모리 삭제
+		int len = strlen(ref.name) + 1;
+		name = new char[len];
+		strcpy(name, ref.name);
+		age = ref.age;
+		return *this;
+	}
 };
 
 
