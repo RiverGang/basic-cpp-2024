@@ -5,15 +5,19 @@ using namespace std;
 class Grade
 {
 private:
-	string name;
+	char * name;
 	int kr;
 	int math;
 	int eng;
+	int total;
+	int average;
 
 public:
-	Grade(string myname= NULL, int mykr=0, int mymath=0, int myeng=0) : kr(mykr), math(mymath), eng(myeng)
+	Grade(const char * myname= NULL, int mykr=0, int mymath=0, int myeng=0) : kr(mykr), math(mymath), eng(myeng)
 	{	
-		name = myname;
+		int len = strlen(myname) + 1;
+		name = new char[len];
+		strcpy(name, myname);
 	}
 
 	~Grade()
@@ -38,6 +42,7 @@ public:
 	void ShowInfo() const
 	{
 		int total = kr + math + eng;
+		int average = total / 3;
 		cout << "이름 : " << name << endl;
 		cout << "국어: " << kr << ", 수학: " << math << ", 영어: " <<eng<< endl;
 		cout << "총점 : " << total << endl;
@@ -83,24 +88,6 @@ int main()
 
 		std[i].SetStudentInfo(strptr, krScore, mathScore, engScore);
 	}
-		
-		/*Grade std1(strptr, krScore, mathScore, engScore);
-
-		cout << "이름 입력 >> ";
-		cin >> namestr;
-		cout << "국어 성적 >> ";
-		cin >> krScore;
-		cout << "수학 성적 >> ";
-		cin >> mathScore;
-		cout << "영어 성적 >> ";
-		cin >> engScore;
-		cout << endl;
-		len = strlen(namestr) + 1;
-		strptr = new char[len];
-		strcpy(strptr, namestr);
-		
-		Grade std2(strptr, krScore, mathScore, engScore);
-		*/
 		std[0].ShowInfo();
 		std[1].ShowInfo();
 
