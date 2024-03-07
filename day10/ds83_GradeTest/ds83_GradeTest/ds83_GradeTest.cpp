@@ -5,22 +5,20 @@ using namespace std;
 class Grade
 {
 private:
-	char *name;
+	string name;
 	int kr;
 	int math;
 	int eng;
 
 public:
-	Grade(const char* myname= NULL, int mykr=0, int mymath=0, int myeng=0) : kr(mykr), math(mymath), eng(myeng)
+	Grade(string myname= NULL, int mykr=0, int mymath=0, int myeng=0) : kr(mykr), math(mymath), eng(myeng)
 	{	
-		int len = strlen(myname) + 1;
-		name = new char[len];
-		strcpy(name, myname);
+		name = myname;
 	}
 
 	~Grade()
 	{
-		delete[] name;
+		delete []name;
 	}
 	
 	void SetStudentInfo(char* myname, int mykr, int mymath, int myeng)
@@ -66,8 +64,6 @@ int main()
 	int krScore;
 	int mathScore;
 	int engScore;
-	int len;
-
 	Grade std[2];
 	
 	for (int i = 0; i < 2; i++)
@@ -81,7 +77,7 @@ int main()
 		cout << "영어 성적 >> ";
 		cin >> engScore;
 		cout << endl;
-		len = strlen(namestr) + 1;
+		int len = strlen(namestr) + 1;
 		strptr = new char[len];
 		strcpy(strptr, namestr);
 
