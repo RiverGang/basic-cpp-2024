@@ -1,0 +1,26 @@
+*Parent class
+class Product : id, price, producer
+
+* Child class
+class Book: ISBN, author, title
+class Hnadphone: model, RAM
+class Computer: model, cpum RAM
+
+* 객체포인터 배열 사용 : product[100]
+
+* 메인화면
+---------- 상품 관리 프로그램 ---------
+상품마다의 고유 넘버 int number = 0;
+추가 될때 마다 number++
+1 상품추가 2 상품출력 3 상품검색 0 종료
+
+1-1 종류 선택(id)
+1-2 id에 맞는 자식생성자 생성
+
+1 또는 2 또는 3을 선택할 경우
+
+1 책 2 핸드폰 3 컴퓨터
+선택 목록을 띄워 해당 상품을 선택한 후에 추가, 출력, 또는 검색 실행된다
+
+상품카테고리에 맞는 출력
+=> producer
